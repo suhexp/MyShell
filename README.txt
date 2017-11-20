@@ -1,7 +1,7 @@
-ÏÐÈÂÅÒ
+ÏÐÈÂÅÒ!
 
-Hello
-123
-12
+Hello!
+123!
+12!
 test_2
 tea tree
