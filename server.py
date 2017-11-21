@@ -3,18 +3,18 @@ import socket
 import datetime
 import json
 
-if __name__ =='__msin__':
+if __name__ =='__main__':
     sock = socket.socket()
-    sock.bind(('localhost',8001))
+    sock.bind(('localhost',8004))
     sock.listen(5)
 
     while True:
         try:
             client, addr = sock.accept()
-            print('='*50,'\nConnected with %s \n'%addr, '='*50)
-            dt=datetime.datetime()
-            dt_str = dt.strftime('%d-%B-%Y')
-            message_text = 'Hello User  '+dt_str
+            print('='*50,'\nConnected with {} \n'.format(addr), '='*50)
+            #dt=datetime.datetime()
+            #dt_str = dt.strftime('%d-%B-%Y')
+            message_text = 'Hello User  '
 
             #print('message text:', message_text)
 
