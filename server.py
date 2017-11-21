@@ -34,8 +34,9 @@ if __name__ =='__main__':
         except KeyboardInterrupt:
             print('='*50, '\n Server stopped.\n', '='*50)
             sock.close()
+            sys.exit()
         except Exception as err:
             print(err)
-        finally:
+        
             sock.close()
             sys.exit()
