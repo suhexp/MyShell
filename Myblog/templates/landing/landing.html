@@ -1,0 +1,56 @@
+{% load static %}
+{% load bootstrap3 %}
+<script src="{% bootstrap_jquery_url %}"></script>
+{% bootstrap_javascript %}
+{% bootstrap_css %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Hi</title>
+   <!-- Bootstrap -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+    <style>
+
+
+    </style>
+
+
+
+</head>
+<body>
+<header>
+<div class="head-container">
+
+</div>
+
+</header>
+
+<div class="general-container">
+    <div class="container top-container >
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">
+                <h1 class="title"> start soon</h1>
+                <div>
+                    <form action="" method="post" class="form ">{% csrf_token %}
+
+                        {{ form.as_p }}
+                       <div>
+                           <button type="submit" class="btn btn-primary btn-lg">submit</button>
+                       </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
